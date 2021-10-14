@@ -13,10 +13,16 @@ class Person
 
 class PersonReg 
 {
-    Person[] personArr= new Person[];
+    Person** personArr;
+   
 
     PersonReg(int maxSize) 
     {
-
+        for (int i = 0; i < maxSize; ++i)
+        {
+            personArr[i] = new Person[];
+        }
     }
+
+    
 };
